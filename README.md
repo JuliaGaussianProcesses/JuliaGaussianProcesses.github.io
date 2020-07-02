@@ -1,1 +1,1 @@
-[JuliaGaussianProcesses.github.io](JuliaGaussianProcesses.github.io)
+[JuliaGaussianProcesses.github.io](https://juliajaussianProcesses.github.io)
