@@ -41,17 +41,17 @@ jobs:
             Pkg.activate("page"); Pkg.instantiate();
             optimize()'
     - name: Deploy (preview)
-        if: github.event_name == 'pull_request' # && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          BRANCH: gh-preview
-          FOLDER: __site
-          SSH: true
-          TARGET_FOLDER: "previews/PR${{ github.event.number }}"
+      if: github.event_name == 'pull_request' # && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        BRANCH: gh-preview
+        FOLDER: __site
+        SSH: true
+        TARGET_FOLDER: "previews/PR${{ github.event.number }}"
     - name: Deploy (main)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          SSH: true
-          BRANCH: master
-          FOLDER: __site
+      if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        SSH: true
+        BRANCH: master
+        FOLDER: __site
