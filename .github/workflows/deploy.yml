@@ -41,7 +41,7 @@ jobs:
             Pkg.activate("page"); Pkg.instantiate();
             optimize()'
     - name: Deploy (preview)
-        if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
+        if: github.event_name == 'pull_request' # && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           BRANCH: gh-preview
