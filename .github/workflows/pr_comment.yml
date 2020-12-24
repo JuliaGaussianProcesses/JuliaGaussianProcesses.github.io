@@ -1,4 +1,4 @@
-name: pr_preview
+name: PR Comment # Write a comment in the PR with a link to the preview of the given website
 on:
   pull_request:
     types: [opened]
