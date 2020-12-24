@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - dev
+  pull_request:
+    branches:
+      - dev
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -11,41 +14,44 @@ jobs:
       uses: actions/checkout@v2
       with:
         persist-credentials: false
-    - name: Install SSH Client
-      continue-on-error: true
-      uses: webfactory/ssh-agent@v0.2.0
+    # NOTE: Python is necessary for the pre-rendering (minification) step
+    - name: Install python
+      uses: actions/setup-python@v2
       with:
-        ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
-    # NOTE: uncomment the following lines if you intend to use PyPlot
-    # - name: Install python
-    #   uses: actions/setup-python@v1
-    #   with:
-    #     python-version: '3.x'
-    # - run: pip install matplotlib
+        python-version: '3.8'
+    # NOTE: Here you can install dependencies such as matplotlib if you use
+    # packages such as PyPlot.
+    - run: pip install matplotlib
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
-        version: 1.4
+        version: 1.5
     # NOTE
-    # Adjust the `input=""` on the last line to indicate where
-    # the source of the package page is (`page/` by default).
-    #
-    # Adjust also `output=""` on the last line if you want
-    # the page to be deployed in a specific folder on gh-pages
-    # if you do that, make sure that you adjust the `prepath`
-    # variable in `config.md` accordingly! so for instance
-    # if you set here `folder="web"` change prepath for
-    # `@def prepath = "YourPackage.jl/web"`
+    #   The steps below ensure that NodeJS and Franklin are loaded then it
+    #   installs highlight.js which is needed for the prerendering step
+    #   (code highlighting + katex prerendering).
+    #   Then the environment is activated and instantiated to install all
+    #   Julia packages which may be required to successfully build your site.
+    #   The last line should be `optimize()` though you may want to give it
+    #   specific arguments, see the documentation or ?optimize in the REPL.
     - run: julia -e '
-            using Pkg;
-            Pkg.add(["NodeJS", "PkgPage", "DataFrames"]);
-            using NodeJS;
-            run(`$(npm_cmd()) install highlight.js purgecss`);
-            import PkgPage;
-            PkgPage.optimize(input="page", output="")'
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        SSH: true
-        BRANCH: master
-        FOLDER: page/__site
+            using Pkg; Pkg.add(["NodeJS", "Franklin"]);
+            using NodeJS; run(`$(npm_cmd()) install highlight.js`);
+            using Franklin;
+            Pkg.activate("page"); Pkg.instantiate();
+            optimize()'
+    - name: Deploy (preview)
+        if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          BRANCH: gh-preview
+          FOLDER: __site
+          SSH: true
+          TARGET_FOLDER: "previews/PR${{ github.event.number }}"
+    - name: Deploy (main)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          SSH: true
+          BRANCH: master
+          FOLDER: __site
