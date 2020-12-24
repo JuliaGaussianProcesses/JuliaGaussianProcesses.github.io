@@ -38,7 +38,7 @@ jobs:
             using Pkg; Pkg.add(["NodeJS", "Franklin"]);
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
-            Pkg.activate("page"); Pkg.instantiate();
+            Pkg.activate(".""); Pkg.instantiate();
             optimize()'
     - name: Deploy (preview)
       if: github.event_name == 'pull_request' # && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
