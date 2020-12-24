@@ -44,7 +44,7 @@ jobs:
       if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        BRANCH: gh-preview
+        BRANCH: master
         FOLDER: __site
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TARGET_FOLDER: "previews/PR${{ github.event.number }}"
