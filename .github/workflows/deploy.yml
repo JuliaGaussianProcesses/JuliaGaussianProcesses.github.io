@@ -46,12 +46,12 @@ jobs:
       with:
         BRANCH: gh-preview
         FOLDER: __site
-        SSH: true
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TARGET_FOLDER: "previews/PR${{ github.event.number }}"
     - name: Deploy (main)
       if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        SSH: true
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: master
         FOLDER: __site
