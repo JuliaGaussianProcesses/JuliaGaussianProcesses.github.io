@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>gplikelihoods/index.html</loc>
-    <lastmod>2020-12-24</lastmod>
+    <loc>https://juliagps.netlify.app/previews/PR2/gplikelihoods/index.html</loc>
+    <lastmod>2020-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>tutorials/index.html</loc>
-    <lastmod>2020-12-24</lastmod>
+    <loc>https://juliagps.netlify.app/previews/PR2/tutorials/index.html</loc>
+    <lastmod>2020-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>index.html</loc>
-    <lastmod>2020-12-24</lastmod>
+    <loc>https://juliagps.netlify.app/previews/PR2/index.html</loc>
+    <lastmod>2020-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>abstractgps/index.html</loc>
-    <lastmod>2020-12-24</lastmod>
+    <loc>https://juliagps.netlify.app/previews/PR2/abstractgps/index.html</loc>
+    <lastmod>2020-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>kernelfunctions/index.html</loc>
-    <lastmod>2020-12-24</lastmod>
+    <loc>https://juliagps.netlify.app/previews/PR2/kernelfunctions/index.html</loc>
+    <lastmod>2020-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
