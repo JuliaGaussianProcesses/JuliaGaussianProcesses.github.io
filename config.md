@@ -143,6 +143,13 @@ These definitions are important for the good functioning of some of the
 commands that are defined and used in PkgPage.jl
 -->
 @def sections        = Pair{String,String}[]
+@def pages           = (
+                        "Tutorials" => "/tutorials",
+                        "AbstractGPs" => "/abstractgps",
+                        "GPLikelihoods" => "/gplikelihoods",
+                        "KernelFunctions" => "/kernelfunctions",
+                        "Team" => "/team"
+                      )
 @def section_counter = 1
 @def showall         = true
 

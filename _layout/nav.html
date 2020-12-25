@@ -18,9 +18,9 @@
     </label>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        {{for (s, n) in sections}}
+        {{for (n, s) in pages}}
         <li class="nav-item">
-          <a class="nav-link" href="#{{fill s}}">{{fill n}}</a>
+          <a class="nav-link" href="{{fill s}}">{{fill n}}</a>
         </li>
         {{end}}
       </ul>

@@ -6,3 +6,7 @@
 @def add_github_view = true
 @def add_github_star = true
 @def github_repo = "JuliaGaussianProcesses/AbstractGPs.jl"
+
+\begin{section}{name="AbstractGPs.jl", title="AbstractGPs"}
+
+\end{section}
