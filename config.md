@@ -19,7 +19,8 @@ The latter allows you to plug in values that you would have defined here.
              deployed page to be in a subfolder e.g.: `YourPackage.jl/web/`.
 -->
 @def title       = "JuliaGaussianProcesses"
-@def prepath     = ""
+@def prepath     = get(ENV, "JULIAGP_FRANKLIN_PREPATH", "")
+@def website_url = get(ENV, "JULIAGP_FRANKLIN_WEBSITE_URL", "juliagaussianprocesses.github.io")
 @def description = """
                    Gaussian Processes in Julia!
                    """
