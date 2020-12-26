@@ -1,6 +1,6 @@
 @def add_docs = true
 @def docs_url = "https://juliagaussianprocesses.github.io/GPLikelihoods.jl/dev/"
-@def title = "GPLikelihoods.jl"
+@def title = "GPLikelihoods"
 @def description = ""
 @def use_header_img = true
 @def add_github_view = true

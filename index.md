@@ -17,7 +17,7 @@
 
 \lead{
     We also recommend to check out pre-existing Gaussian Process package which may do what you want already.
-    We list here the most known packages but don't hesitate to add your via a PR!
+    We list here the most known packages but don't hesitate to add yours via a PR!
 
   - [AugmentedGaussianProcesses.jl](https://github.com/theogf/AugmentedGaussianProcesses.jl) : Focused on non-conjugate Gaussian Processes, scalability and the use of Variational Inference.
   - [GaussianProcesses.jl](https://github.com/STOR-i/GaussianProcesses.jl) : General tool-box for GPs.

@@ -5,7 +5,7 @@
 
 \begin{section}{name="The Team", title="Team"}
 The fantastic team behind JuliaGaussianProcesses
-
+  
 {{ fill_profile }}
 
 \end{section}

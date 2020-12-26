@@ -15,7 +15,7 @@
 
 \begin{section}{title="Some theory", name="Theory"}
 
-Kernel functions are a simple and efficient representation of a dot-product of high (and infinite) dimensional feature maps.
+Kernel functions are a simple and efficient representation of the dot-product of high (and infinite) dimensional feature maps.
 
 \end{section}
 
