@@ -6,6 +6,10 @@
 
 \lead{This is the website to host the general documentation for the packages [KernelFunctions.jl](https://github.com/JuliaGaussianProcesses/KernelFunctions.jl), [AbstractGPs.jl](https://github.com/JuliaGaussianProcesses/AbstractGPs.jl), [GPLikelihoods.jl](https://github.com/JuliaGaussianProcesses/GPLikelihoods.jl) and more to come!}
 
+\lead{
+**Note that this website is still a work in progress and a lot of things are missing/buggy, for now check out the docs of each package, [submit an issue](https://github.com/JuliaGaussianProcesses/JuliaGaussianProcesses.github.io/issues/new) or don't hesitate to participate by [creating a pull request](https://github.com/JuliaGaussianProcesses/JuliaGaussianProcesses.github.io/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)**
+}
+
 \lead{You will find in this website a collection of [tutorials](tutorials) combining one or more packages from the JuliaGPs ecosystem for typical machine learning or statistics problems}
 
 \lead{For each of the packages we also provide ressources and documentation to get a better understanding of the tools and the topics you can access them here:
