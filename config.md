@@ -19,11 +19,13 @@ The latter allows you to plug in values that you would have defined here.
              deployed page to be in a subfolder e.g.: `YourPackage.jl/web/`.
 -->
 @def title       = "JuliaGaussianProcesses"
-@def prepath     = ""
+@def prepath     = get(ENV, "JULIAGP_FRANKLIN_PREPATH", "")
+@def website_url = get(ENV, "JULIAGP_FRANKLIN_WEBSITE_URL", "juliagaussianprocesses.github.io")
 @def description = """
                    Gaussian Processes in Julia!
                    """
 @def authors     = "JuliaGPs organisation"
+@def sub_page    = true
 
 <!--  NAVBAR SPECS
   NOTE:
@@ -35,14 +37,14 @@ The latter allows you to plug in values that you would have defined here.
   - nav_logo_path: where the logo is
 -->
 @def add_docs  = false
-@def docs_url  = "https://franklinjl.org/"
+@def docs_url  = ""
 @def docs_name = "Docs"
 
 @def add_nav_logo   = true
-@def nav_logo_path  = "/assets/logo.svg"
+@def nav_logo_path  = "/assets/logojuliagps.png"
 @def nav_logo_alt   = "Logo"
 @def nav_logo_style = """
-                      max-height:     25px;
+                      max-height:     40px;
                       padding-right:  10px;
                       """
 
@@ -141,6 +143,13 @@ These definitions are important for the good functioning of some of the
 commands that are defined and used in PkgPage.jl
 -->
 @def sections        = Pair{String,String}[]
+@def pages           = (
+                        "Tutorials" => "/tutorials",
+                        "AbstractGPs" => "/abstractgps",
+                        "GPLikelihoods" => "/gplikelihoods",
+                        "KernelFunctions" => "/kernelfunctions",
+                        "Team" => "/team"
+                      )
 @def section_counter = 1
 @def showall         = true
 
