@@ -52,3 +52,35 @@ pre code.hljs.plaintext {
 }
 
 /* ADD ANY SPECIFIC TWEAKS YOU MIGHT WANT HERE */
+
+
+/* From the turing.ml website */
+
+.team-row {
+    display: flex;
+    align-items: center;
+}
+
+.team-row-bio {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.team-row-image {
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+}
+
+.team-row-image img {
+    border-radius: 10%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.team-row-bio-links a {
+    color: #5c5c5c !important;
+}

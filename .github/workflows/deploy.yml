@@ -44,6 +44,7 @@ jobs:
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "Franklin"]);
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
+            run(`$(npm_cmd()) install --save @fortawesome/fontawesome-free`)
             using Franklin;
             Pkg.activate("."); Pkg.instantiate();
             optimize()'
