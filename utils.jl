@@ -5,7 +5,7 @@ using YAML
 #
 
 function hfun_fill_profile(file_source)
-    team = YAML.load_file(joinpath("_assets", file_source); dicttype=Dict{Symbol, Any})
+    team = YAML.load_file(joinpath("_assets", first(file_source)); dicttype=Dict{Symbol, Any})
     s = ""
     for member in team
         s *= """
