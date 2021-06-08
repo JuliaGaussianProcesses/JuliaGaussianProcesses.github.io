@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://juliagps.netlify.app/previews/PR7/team/index.html</loc>
-    <lastmod>2021-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://juliagps.netlify.app/previews/PR7/gplikelihoods/index.html</loc>
     <lastmod>2021-06-08</lastmod>
     <changefreq>monthly</changefreq>
