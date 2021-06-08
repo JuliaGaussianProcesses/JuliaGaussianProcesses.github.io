@@ -4,8 +4,8 @@ using YAML
 # you might want to use in your site here
 #
 
-function hfun_fill_profile()
-    team = YAML.load_file("_assets/team.yml"; dicttype=Dict{Symbol, Any})
+function hfun_fill_profile(file_source)
+    team = YAML.load_file(joinpath("_assets", file_source); dicttype=Dict{Symbol, Any})
     s = ""
     for member in team
         s *= """
