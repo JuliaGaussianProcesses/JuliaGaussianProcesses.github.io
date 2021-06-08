@@ -8,5 +8,7 @@ The fantastic team behind JuliaGaussianProcesses
   
 {{ fill_profile }}
 
+{{ fill_gsoc }}
+
 \end{section}
 
