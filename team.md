@@ -6,9 +6,11 @@
 \begin{section}{name="The Team", title="Team"}
 The fantastic team behind JuliaGaussianProcesses
   
-{{ fill_profile }}
+{{ fill_profile team.yml }}
 
-{{ fill_gsoc }}
+### GSOC Students
+
+{{ fill_profile gsoc.yml}}
 
 \end{section}
 
