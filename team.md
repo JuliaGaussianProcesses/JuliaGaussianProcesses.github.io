@@ -10,7 +10,7 @@ The fantastic team behind JuliaGaussianProcesses
 
 ### GSOC Students
 
-{{ fill_profile gsoc.yml}}
+{{ fill_profile gsoc.yml }}
 
 \end{section}
 
