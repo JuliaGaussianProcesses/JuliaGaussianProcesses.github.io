@@ -1,0 +1,4 @@
+Sitemap: https://juliagps.netlify.app/previews/PR8/sitemap.xml
+
+User-agent: *
+Disallow:
