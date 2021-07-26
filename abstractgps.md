@@ -10,6 +10,7 @@
 \begin{section}{name="AbstractGPs.jl", title="AbstractGPs"}
 \lead{
 AbstractGPs give you all the tools to build GP models from scratch.
-Check out the tutorials, the docs and the github repo for more details!
+
+Check out [the documentation](https://juliagaussianprocesses.github.io/AbstractGPs.jl/) and the [GitHub repository](https://github.com/JuliaGaussianProcesses/AbstractGPs.jl) for more details!
 }
 \end{section}
