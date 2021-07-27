@@ -14,6 +14,7 @@ GPLikelihoods aims at facilitating the use of latent models with non-conjugate l
 The goal is to represent different models such as classification $y \sim \textrm{Bernoulli}(g(f(x))))$ or event counting ${y \sim \textrm{Poisson}(g(f(x)))}$ given an adapted transformation $g$.
 
 **Note that this package is still a WIP**
+
 It has not been released as a package yet, and its name may still change.
 }
 
