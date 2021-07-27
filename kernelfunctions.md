@@ -11,14 +11,8 @@
 
 \lead{The working horse for Gaussian Processes and other applications}
 
-\end{section}
-
-\begin{section}{title="Some theory", name="Theory"}
-
 Kernel functions are a simple and efficient representation of the dot-product of high (and infinite) dimensional feature maps.
 
-\end{section}
-
-\begin{section}{title="Kernel Cookbook", name="Kernel Cookbook"}
+Check out [the documentation](https://juliagaussianprocesses.github.io/KernelFunctions.jl/) and the [GitHub repository](https://github.com/JuliaGaussianProcesses/KernelFunctions.jl/) for more details!
 
 \end{section}
