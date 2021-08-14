@@ -1,3 +1,10 @@
+- name: David Widmann
+  photo: https://widmann.dev/assets/profile_small.jpg
+  github: devmotion
+  institution: Uppsala University
+  website: https://widmann.dev
+  email: david.widmann@it.uu.se
+
 - name: Carl Rasmussen
   photo: https://avatars.githubusercontent.com/u/839652?v=4
   github: cer54
@@ -11,13 +18,6 @@
   institution: University of Cambridge
   website: http://mlg.eng.cam.ac.uk/hong/
   email: hg344@cam.ac.uk
-
-- name: David Widmann
-  photo: https://widmann.dev/assets/profile_small.jpg
-  github: devmotion
-  institution: Uppsala University
-  website: https://widmann.dev
-  email: david.widmann@it.uu.se
 
 - name: Sharan Yalburgi
   photo: https://sharanry.github.io/images/profile_photo.jpg
