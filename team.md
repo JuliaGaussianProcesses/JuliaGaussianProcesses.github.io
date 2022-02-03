@@ -8,9 +8,9 @@ The fantastic team behind JuliaGaussianProcesses
   
 {{ fill_profile team.yml }}
 
-### GSOC Students
+<!-- ### GSOC Students -->
 
-{{ fill_profile gsoc.yml }}
+<!-- {{ fill_profile gsoc.yml }} -->
 
 \end{section}
 
