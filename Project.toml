@@ -1,5 +1,5 @@
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
-PkgPage = "e7214860-93a8-4f22-b43d-bd447d1a2094"
+KernelFunctions = "ec8451be-7e33-11e9-00cf-bbf324bd1392"
+Pollen = "c88717ad-5130-4874-a664-5a9aba5ec443"
 YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
