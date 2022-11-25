@@ -5,13 +5,13 @@ This is the website to host the general documentation for the packages [KernelFu
 !!! info
     Note that this website is still a work in progress and a lot of things are missing/buggy, for now check out the docs of each package, [submit an issue](https://github.com/JuliaGaussianProcesses/JuliaGaussianProcesses.github.io/issues/new) or don't hesitate to participate by [creating a pull request](https://github.com/JuliaGaussianProcesses/JuliaGaussianProcesses.github.io/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
 
-You will find in this website a collection of [tutorials](tutorials) combining one or more packages from the JuliaGPs ecosystem for typical machine learning or statistics problems}
+You will find in this website a collection of [tutorials](tutorials.md) combining one or more packages from the JuliaGPs ecosystem for typical machine learning or statistics problems}
 
 For each of the packages we also provide resources and documentation to get a better understanding of the tools and the topics you can access them here:
 
-- [AbstractGPs.jl](abstractgps)
-- [GPLikelihoods.jl](gplikelihoods)
-- [KernelFunctions.jl](kernelfunctions)
+- [AbstractGPs.jl](abstractgps.md)
+- [GPLikelihoods.jl](gplikelihoods.md)
+- [KernelFunctions.jl](kernelfunctions.md)
 
 We also recommend to check out pre-existing Gaussian Process package which may do what you want already.
 We list here the most known packages but don't hesitate to add yours via a PR!

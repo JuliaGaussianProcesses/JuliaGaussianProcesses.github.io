@@ -2,5 +2,6 @@
     "JuliaGPs": "/doc/docs/index.md",
     "KernelFunctions": "/doc/docs/kernelfunctions.md",
     "AbstractGPs": "/doc/docs/abstractgps.md",
-    "GPLikelihoods": "/doc/docs/gplikelihoods.md"
+    "GPLikelihoods": "/doc/docs/gplikelihoods.md",
+    "Tutorials": "doc/docs/tutorials.md"
 }
