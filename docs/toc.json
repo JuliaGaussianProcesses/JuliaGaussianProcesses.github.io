@@ -1,6 +1,6 @@
 {
-    "README": "/doc/README.md",
-    "Reference": {
-        "Module": "/ref/"
-    }
+    "JuliaGPs": "/doc/docs/index.md",
+    "KernelFunctions": "/doc/docs/kernelfunctions.md",
+    "AbstractGPs": "/doc/docs/abstractgps.md",
+    "GPLikelihoods": "/doc/docs/gplikelihoods.md"
 }

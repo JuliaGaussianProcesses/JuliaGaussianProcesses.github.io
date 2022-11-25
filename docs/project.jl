@@ -1,17 +1,18 @@
 using Pollen, ModuleInfo, Pkg
 
 # The main package you are documenting
-using
-m =
+using KernelFunctions
+using JuliaGPsWebsite
+m = JuliaGPsWebsite
 
 
 # Packages that will be indexed in the documentation. Add additional modules
 # to the list.
-ms = [m]
+ms = [m, KernelFunctions]
 
 function createpackageindex(; package = m, modules = ms, tag = "dev")
     pkgtags = Dict(string(package) => tag)
-    return PackageIndex(ms; recurse = 0, pkgtags, cache = true, verbose = true)
+    return PackageIndex(modules; recurse = 1, pkgtags, cache = true, verbose = true)
 end
 
 
@@ -23,7 +24,7 @@ function createproject(; tag = "dev", package = m, modules = ms)
         [d for d in pkgindex.packages[1].dependencies
         if d in [ModuleInfo.getid(p) for p in pkgindex.packages]]...]
 
-    project = Project([
+    return Project([
         # Add written documentation, source files, and symbol docstrings as pages
         DocumentationFiles([package]; pkgtags),
         SourceFiles(modules; pkgtags),

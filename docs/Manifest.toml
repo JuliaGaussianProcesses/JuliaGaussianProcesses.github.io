@@ -2,7 +2,7 @@
 
 julia_version = "1.8.2"
 manifest_format = "2.0"
-project_hash = "1dffec9892a6f8fd9451e123f14a2c119d03b238"
+project_hash = "f878406bd3e3621d1835a0b2283155174dd29b1c"
 
 [[deps.ANSIColoredPrinters]]
 git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
@@ -310,7 +310,7 @@ version = "1.0.15"
 deps = ["DataFrames", "KernelFunctions", "Pollen", "YAML"]
 path = "/home/theo/Web/JuliaGaussianProcesses.github.io/"
 uuid = "d12da91e-a862-4a34-904b-c64693c73d55"
-version = "0.0.0"
+version = "1.0.0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
