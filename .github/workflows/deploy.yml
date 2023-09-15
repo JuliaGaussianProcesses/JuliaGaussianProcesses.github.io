@@ -19,7 +19,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         BRANCH: gh-preview
-        FOLDER: __site
+        FOLDER: .
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TARGET_FOLDER: "previews/PR${{ github.event.number }}"
     - name: Deploy (main)
@@ -28,4 +28,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: __site
+        FOLDER: .
